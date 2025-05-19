@@ -5,7 +5,7 @@
 */
 //
 // Scripts
-// 
+//
 
 window.addEventListener('DOMContentLoaded', event => {
 
@@ -30,5 +30,18 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
+
+    // Scroll revealアニメーションの初期セットアップ
+    const sections = document.querySelectorAll('.resume-section')
+    sections.forEach(sec => sec.classList.add('hidden-section'))
+    const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('reveal')
+                obs.unobserve(entry.target)
+            }
+        })
+    }, { threshold: 0.1 })
+    sections.forEach(sec => observer.observe(sec))
 
 });
