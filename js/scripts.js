@@ -3,9 +3,6 @@
 * Copyright 2013-2023 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
 */
-//
-// Scripts
-//
 
 window.addEventListener('DOMContentLoaded', event => {
 
@@ -16,7 +13,7 @@ window.addEventListener('DOMContentLoaded', event => {
             target: '#sideNav',
             rootMargin: '0px 0px -40%',
         });
-    };
+    }
 
     // Collapse responsive navbar when toggler is visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');
@@ -31,17 +28,30 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
-    // Scroll revealアニメーションの初期セットアップ
-    const sections = document.querySelectorAll('.resume-section')
-    sections.forEach(sec => sec.classList.add('hidden-section'))
+    // Scroll reveal animation
+    const sections = document.querySelectorAll('.resume-section');
+    sections.forEach(sec => sec.classList.add('hidden-section'));
+
     const observer = new IntersectionObserver((entries, obs) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('reveal')
-                obs.unobserve(entry.target)
+                entry.target.classList.add('reveal');
+                obs.unobserve(entry.target);
             }
-        })
-    }, { threshold: 0.1 })
-    sections.forEach(sec => observer.observe(sec))
+        });
+    }, { threshold: 0.08 });
+
+    sections.forEach(sec => observer.observe(sec));
+
+    // Smooth scroll for nav links
+    document.querySelectorAll('.js-scroll-trigger').forEach(link => {
+        link.addEventListener('click', function (e) {
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
 
 });
