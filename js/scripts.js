@@ -4,6 +4,41 @@
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
 */
 
+async function loadProjects() {
+    const list = document.getElementById('projects-list');
+    if (!list) return;
+
+    try {
+        const response = await fetch('data/projects.json');
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const projects = await response.json();
+
+        list.replaceChildren(...projects.map(project => {
+            const item = document.createElement('li');
+            item.className = 'mb-2';
+
+            const icon = document.createElement('span');
+            icon.className = 'fa-li';
+            icon.innerHTML = '<i class="fas fa-link"></i>';
+
+            const link = document.createElement('a');
+            link.href = project.url;
+            link.target = '_blank';
+            link.rel = 'noopener noreferrer';
+            link.textContent = project.name;
+
+            item.append(icon, link, document.createTextNode(` — ${project.description}`));
+            return item;
+        }));
+    } catch (error) {
+        console.error('Failed to load projects:', error);
+        const item = document.createElement('li');
+        item.className = 'mb-2';
+        item.textContent = 'プロジェクト一覧の読み込みに失敗しました。';
+        list.replaceChildren(item);
+    }
+}
+
 window.addEventListener('DOMContentLoaded', event => {
 
     // Activate Bootstrap scrollspy on the main nav element
@@ -53,5 +88,7 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
+
+    loadProjects();
 
 });

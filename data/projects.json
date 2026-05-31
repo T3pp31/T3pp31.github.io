@@ -1,0 +1,37 @@
+[
+  {
+    "name": "search_devices",
+    "url": "https://github.com/T3pp31/search_devices",
+    "description": "デバイス検索ツール デスクトップアプリです."
+  },
+  {
+    "name": "crypto-visualizer",
+    "url": "https://t3pp31.github.io/crypto-visualizer/",
+    "description": "暗号アルゴリズムの可視化Webアプリです."
+  },
+  {
+    "name": "pdf_merge_app",
+    "url": "https://t3pp31.github.io/pdf_merge_app/",
+    "description": "PDF結合Webアプリです."
+  },
+  {
+    "name": "QR_generator",
+    "url": "https://t3pp31.github.io/QR_generator/",
+    "description": "QRコード生成Webアプリです."
+  },
+  {
+    "name": "Shogi",
+    "url": "https://t3pp31.github.io/Shogi/",
+    "description": "将棋Webアプリです."
+  },
+  {
+    "name": "Othello",
+    "url": "https://t3pp31.github.io/Othello/",
+    "description": "オセロWebアプリです."
+  },
+  {
+    "name": "face-mosaic-app",
+    "url": "https://t3pp31.github.io/face-mosaic-app/",
+    "description": "ブラウザ内で顔検出しモザイクをかけるWebアプリです."
+  }
+]
