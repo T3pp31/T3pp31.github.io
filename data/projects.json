@@ -33,5 +33,15 @@
     "name": "face-mosaic-app",
     "url": "https://t3pp31.github.io/face-mosaic-app/",
     "description": "ブラウザ内で顔検出しモザイクをかけるWebアプリです."
+  },
+  {
+    "name": "Transnote",
+    "url": "https://t3pp31.github.io/Transnote/",
+    "description": "macOS向けオンデバイス文字起こしアプリの配布ページです."
+  },
+  {
+    "name": "DockBridge",
+    "url": "https://t3pp31.github.io/DockBridge/",
+    "description": "macOS向けSFTPクライアントの配布ページです."
   }
 ]
