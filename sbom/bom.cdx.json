@@ -1,0 +1,261 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:7f3a9c2e-4b1d-4e8a-9c6f-2d8e1a5b3c7f",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-07-25T00:00:00Z",
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "name": "hand-maintained-sbom",
+          "version": "1.0.0"
+        }
+      ]
+    },
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:github/T3pp31/T3pp31.github.io@main",
+      "name": "T3pp31 Portfolio",
+      "version": "1.0.0",
+      "description": "Static portfolio site hosted on GitHub Pages",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://t3pp31.github.io/"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/T3pp31/T3pp31.github.io"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "pkg:github/StartBootstrap/startbootstrap-resume@7.0.6",
+      "name": "startbootstrap-resume",
+      "version": "7.0.6",
+      "group": "Start Bootstrap",
+      "description": "Resume theme by Start Bootstrap (vendored in css/styles.css and js/scripts.js)",
+      "purl": "pkg:github/StartBootstrap/startbootstrap-resume@7.0.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://startbootstrap.com/theme/resume"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/StartBootstrap/startbootstrap-resume"
+        },
+        {
+          "type": "distribution",
+          "url": "https://github.com/StartBootstrap/startbootstrap-resume/blob/v7.0.6/LICENSE"
+        }
+      ],
+      "properties": [
+        {
+          "name": "distribution",
+          "value": "vendored"
+        },
+        {
+          "name": "vendored-in",
+          "value": "css/styles.css,js/scripts.js"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/bootstrap@5.2.3",
+      "name": "bootstrap",
+      "version": "5.2.3",
+      "description": "Bootstrap CSS framework (CSS vendored in css/styles.css; JS loaded from CDN)",
+      "purl": "pkg:npm/bootstrap@5.2.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://getbootstrap.com/"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/twbs/bootstrap"
+        },
+        {
+          "type": "distribution",
+          "url": "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        }
+      ],
+      "properties": [
+        {
+          "name": "distribution",
+          "value": "mixed"
+        },
+        {
+          "name": "css-vendored-in",
+          "value": "css/styles.css"
+        },
+        {
+          "name": "js-cdn-url",
+          "value": "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/@fortawesome/fontawesome-free@6.3.0",
+      "name": "@fortawesome/fontawesome-free",
+      "version": "6.3.0",
+      "group": "Font Awesome",
+      "description": "Font Awesome icon library (loaded from CDN)",
+      "purl": "pkg:npm/@fortawesome/fontawesome-free@6.3.0",
+      "licenses": [
+        {
+          "expression": "MIT AND (OFL-1.1 OR CC-BY-4.0)"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://fontawesome.com/"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/FortAwesome/Font-Awesome"
+        },
+        {
+          "type": "distribution",
+          "url": "https://use.fontawesome.com/releases/v6.3.0/js/all.js"
+        }
+      ],
+      "properties": [
+        {
+          "name": "distribution",
+          "value": "cdn"
+        },
+        {
+          "name": "cdn-url",
+          "value": "https://use.fontawesome.com/releases/v6.3.0/js/all.js"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/google-fonts/inter",
+      "name": "Inter",
+      "version": "latest",
+      "group": "Google Fonts",
+      "description": "Inter typeface by Rasmus Andersson (loaded from Google Fonts CDN)",
+      "licenses": [
+        {
+          "license": {
+            "id": "OFL-1.1"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://fonts.google.com/specimen/Inter"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/rsms/inter"
+        },
+        {
+          "type": "distribution",
+          "url": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
+        }
+      ],
+      "properties": [
+        {
+          "name": "distribution",
+          "value": "cdn"
+        },
+        {
+          "name": "referenced-in",
+          "value": "index.html,css/modern.css"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/google-fonts/jetbrains-mono",
+      "name": "JetBrains Mono",
+      "version": "latest",
+      "group": "Google Fonts",
+      "description": "JetBrains Mono typeface by JetBrains (loaded from Google Fonts CDN)",
+      "licenses": [
+        {
+          "license": {
+            "id": "OFL-1.1"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://fonts.google.com/specimen/JetBrains+Mono"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/JetBrains/JetBrainsMono"
+        },
+        {
+          "type": "distribution",
+          "url": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
+        }
+      ],
+      "properties": [
+        {
+          "name": "distribution",
+          "value": "cdn"
+        },
+        {
+          "name": "referenced-in",
+          "value": "index.html,css/modern.css"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:github/T3pp31/T3pp31.github.io@main",
+      "dependsOn": [
+        "pkg:github/StartBootstrap/startbootstrap-resume@7.0.6",
+        "pkg:npm/bootstrap@5.2.3",
+        "pkg:npm/@fortawesome/fontawesome-free@6.3.0",
+        "pkg:generic/google-fonts/inter",
+        "pkg:generic/google-fonts/jetbrains-mono"
+      ]
+    },
+    {
+      "ref": "pkg:github/StartBootstrap/startbootstrap-resume@7.0.6",
+      "dependsOn": [
+        "pkg:npm/bootstrap@5.2.3"
+      ]
+    }
+  ]
+}

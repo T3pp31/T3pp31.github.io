@@ -1,0 +1,46 @@
+name: SBOM
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  sbom:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate hand-maintained SBOM exists
+        run: |
+          if [ ! -f sbom/bom.cdx.json ]; then
+            echo "Error: sbom/bom.cdx.json not found"
+            exit 1
+          fi
+          echo "Hand-maintained SBOM found: sbom/bom.cdx.json"
+
+      - name: Generate SBOM with Anchore
+        uses: anchore/sbom-action@v0
+        with:
+          path: .
+          format: cyclonedx-json
+          output-file: sbom-generated.cdx.json
+
+      - name: Upload generated SBOM artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: sbom-generated
+          path: sbom-generated.cdx.json
+          retention-days: 90
+
+      - name: Upload hand-maintained SBOM artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: sbom-hand-maintained
+          path: sbom/bom.cdx.json
+          retention-days: 90
