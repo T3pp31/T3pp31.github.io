@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -25,20 +25,24 @@
                 <span class="d-block d-lg-none">T3pp31</span>
                 <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="..." /></span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" data-i18n-aria="nav.toggle"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#libraries">Libraries</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#security">Security</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publications">Publications</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about" data-i18n="nav.about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience" data-i18n="nav.experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education" data-i18n="nav.education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills" data-i18n="nav.skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests" data-i18n="nav.interests">Interests</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#libraries" data-i18n="nav.libraries">Libraries</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#security" data-i18n="nav.security">Security</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects" data-i18n="nav.projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publications" data-i18n="nav.publications">Publications</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards" data-i18n="nav.awards">Awards</a></li>
                 </ul>
+                <div class="lang-switch" role="group" aria-label="Language">
+                    <button type="button" class="lang-btn" data-lang-btn="en" aria-pressed="false">Eng</button>
+                    <button type="button" class="lang-btn" data-lang-btn="ja" aria-pressed="true">日本語</button>
+                </div>
             </div>
         </nav>
         <!-- Page Content-->
@@ -51,11 +55,11 @@
                         <span class="text-primary">Teppei</span>
                     </h1>
                     <div class="subheading mb-4">
-                        Tokyo, Japan · <a href="mailto:name@email.com">Full-Stack Engineer</a>
+                        Tokyo, Japan · <a href="mailto:name@email.com" data-i18n="about.role">Full-Stack Engineer</a>
                     </div>
-                    <p class="lead mb-4">メーカーでソフトウェアエンジニアをしています．現在はネットワークスペシャリスト取得に向けて取り組んでいます．</p>
+                    <p class="lead mb-4" data-i18n="about.lead">メーカーでソフトウェアエンジニアをしています．現在はネットワークスペシャリスト取得に向けて取り組んでいます．</p>
                     <p class="lead mb-5" style="display:inline-flex;align-items:center;gap:0.5rem;background:rgba(99,102,241,0.08);padding:0.4rem 1rem;border-radius:2rem;font-size:0.95rem;font-weight:500;color:#6366f1;">
-                        <i class="fab fa-kaggle"></i> Kaggle Competition Expert
+                        <i class="fab fa-kaggle"></i> <span data-i18n="about.kaggle">Kaggle Competition Expert</span>
                     </p>
                     <div class="social-icons">
                         <a class="social-icon" href="https://github.com/T3pp31" aria-label="GitHub"><i class="fab fa-github"></i></a>
@@ -70,38 +74,38 @@
             <!-- Experience-->
             <section class="resume-section" id="experience">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
+                    <h2 class="mb-5" data-i18n="experience.title">Experience</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">メーカー</h3>
+                            <h3 class="mb-0" data-i18n="experience.company1.name">メーカー</h3>
                             <div class="subheading mb-3"></div>
-                            <p>ソフトウェアエンジニア，データ解析，予測などの開発を行っています．</p>
+                            <p data-i18n="experience.company1.desc">ソフトウェアエンジニア，データ解析，予測などの開発を行っています．</p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2026.2 - 現在</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary" data-i18n="experience.company1.date">2026.2 - 現在</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">一般社団法人共同通信社</h3>
+                            <h3 class="mb-0" data-i18n="experience.company2.name">一般社団法人共同通信社</h3>
                             <div class="subheading mb-3"></div>
-                            <p>内製開発，AWSを活用した開発，保守運用，外部ベンダとの開発を行ってきました．</p>
+                            <p data-i18n="experience.company2.desc">内製開発，AWSを活用した開発，保守運用，外部ベンダとの開発を行ってきました．</p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2023.4 - 2026.1</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary" data-i18n="experience.company2.date">2023.4 - 2026.1</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">SAgri</h3>
-                            <div class="subheading mb-3">インターン，データサイエンティスト，データクレンジング</div>
-                            <p>Pythonを用いてデータクレンジングを行っていました．その他，解析作業なども適宜行っていました．QGISを用いてマッピングも行っていました．</p>
+                            <h3 class="mb-0" data-i18n="experience.company3.name">SAgri</h3>
+                            <div class="subheading mb-3" data-i18n="experience.company3.role">インターン，データサイエンティスト，データクレンジング</div>
+                            <p data-i18n="experience.company3.desc">Pythonを用いてデータクレンジングを行っていました．その他，解析作業なども適宜行っていました．QGISを用いてマッピングも行っていました．</p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2021.10 - 2023.3</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary" data-i18n="experience.company3.date">2021.10 - 2023.3</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">N高校</h3>
-                            <div class="subheading mb-3">プログラミングTA</div>
-                            <p>インターンシップで，プログラミングTAを行っていました．</p>
+                            <h3 class="mb-0" data-i18n="experience.company4.name">N高校</h3>
+                            <div class="subheading mb-3" data-i18n="experience.company4.role">プログラミングTA</div>
+                            <p data-i18n="experience.company4.desc">インターンシップで，プログラミングTAを行っていました．</p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2021.7 - 2022.10</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary" data-i18n="experience.company4.date">2021.7 - 2022.10</span></div>
                     </div>
                 </div>
             </section>
@@ -109,23 +113,23 @@
             <!-- Education-->
             <section class="resume-section" id="education">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
+                    <h2 class="mb-5" data-i18n="education.title">Education</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">中央大学</h3>
-                            <div class="subheading mb-3">国際情報学士</div>
-                            <div>コンピュータサイエンス，情報法学，セキュリティ</div>
+                            <h3 class="mb-0" data-i18n="education.school">中央大学</h3>
+                            <div class="subheading mb-3" data-i18n="education.degree">国際情報学士</div>
+                            <div data-i18n="education.fields">コンピュータサイエンス，情報法学，セキュリティ</div>
                             <p></p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2019.4 - 2023.3</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary" data-i18n="education.date">2019.4 - 2023.3</span></div>
                     </div>
             </section>
             <hr class="m-0" />
             <!-- Skills-->
             <section class="resume-section" id="skills">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">Programming Languages & Tools</div>
+                    <h2 class="mb-5" data-i18n="skills.title">Skills</h2>
+                    <div class="subheading mb-3" data-i18n="skills.subtitle">Programming Languages & Tools</div>
                     <ul class="list-inline dev-icons">
                         <li class="list-inline-item" title="HTML5"><i class="fab fa-html5"></i></li>
                         <li class="list-inline-item" title="CSS3"><i class="fab fa-css3-alt"></i></li>
@@ -142,29 +146,29 @@
             <!-- Interests-->
             <section class="resume-section" id="interests">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Interests</h2>
-                    <p>技術全般に興味があります．特にセキュリティには面白さを感じ，独学を行っています．また，Kaggleコンペティションに意欲的に参加し，データ分析の知見を深めているところです．．</p>
-                    <p class="mb-0">セキュリティを理解するために，技術の特性について，深く学んでいく必要があると考えています．</p>
+                    <h2 class="mb-5" data-i18n="interests.title">Interests</h2>
+                    <p data-i18n="interests.p1">技術全般に興味があります．特にセキュリティには面白さを感じ，独学を行っています．また，Kaggleコンペティションに意欲的に参加し，データ分析の知見を深めているところです．．</p>
+                    <p class="mb-0" data-i18n="interests.p2">セキュリティを理解するために，技術の特性について，深く学んでいく必要があると考えています．</p>
                 </div>
             </section>
             <hr class="m-0" />
             <!-- Libraries-->
             <section class="resume-section" id="libraries">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Libraries</h2>
-                    <p class="mb-3">コントリビュートしているライブラリ一覧です。（名称とURL、任意で簡単な説明）</p>
+                    <h2 class="mb-5" data-i18n="libraries.title">Libraries</h2>
+                    <p class="mb-3" data-i18n="libraries.intro">コントリビュートしているライブラリ一覧です。（名称とURL、任意で簡単な説明）</p>
                     <ul class="fa-ul mb-0">
                         <li class="mb-2">
                             <span class="fa-li"><i class="fas fa-code-branch"></i></span>
-                            <a href="https://crates.io/crates/caesar_cipher_enc_dec" target="_blank" rel="noopener noreferrer">caesar_cipher_enc_dec</a> — シーザー暗号を簡単に使うためのライブラリ in Rust.
+                            <a href="https://crates.io/crates/caesar_cipher_enc_dec" target="_blank" rel="noopener noreferrer">caesar_cipher_enc_dec</a><span data-i18n="libraries.caesar"> — シーザー暗号を簡単に使うためのライブラリ in Rust.</span>
                         </li>
                         <li class="mb-2">
                             <span class="fa-li"><i class="fas fa-code-branch"></i></span>
-                            <a href="https://crates.io/crates/input_py" target="_blank" rel="noopener noreferrer">input_py</a> — Python用の入力補助ライブラリ in Rust.
+                            <a href="https://crates.io/crates/input_py" target="_blank" rel="noopener noreferrer">input_py</a><span data-i18n="libraries.input_py"> — Python用の入力補助ライブラリ in Rust.</span>
                         </li>
                         <li class="mb-2">
                             <span class="fa-li"><i class="fas fa-code-branch"></i></span>
-                            <a href="https://github.com/secdev/scapy" target="_blank" rel="noopener noreferrer">scapy</a> — Python用のパケット操作ライブラリ.気が向いたときにコントリビュートしています．大学時代お世話になりました．
+                            <a href="https://github.com/secdev/scapy" target="_blank" rel="noopener noreferrer">scapy</a><span data-i18n="libraries.scapy"> — Python用のパケット操作ライブラリ.気が向いたときにコントリビュートしています．大学時代お世話になりました．</span>
                         </li>
 
                     </ul>
@@ -174,8 +178,8 @@
             <!-- Security Research-->
             <section class="resume-section" id="security">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Security Research</h2>
-                    <p class="mb-3">脆弱性報告および修正に関わった CVE / アドバイザリです。</p>
+                    <h2 class="mb-5" data-i18n="security.title">Security Research</h2>
+                    <p class="mb-3" data-i18n="security.intro">脆弱性報告および修正に関わった CVE / アドバイザリです。</p>
                     <div class="cve-list" id="cve-list" aria-live="polite"></div>
                 </div>
             </section>
@@ -183,8 +187,8 @@
             <!-- Projects-->
             <section class="resume-section" id="projects">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Projects</h2>
-                    <p class="mb-3">開発した実績です。題目とURLを掲載しています。</p>
+                    <h2 class="mb-5" data-i18n="projects.title">Projects</h2>
+                    <p class="mb-3" data-i18n="projects.intro">開発した実績です。題目とURLを掲載しています。</p>
                     <ul class="fa-ul mb-0" id="projects-list" aria-live="polite"></ul>
                 </div>
             </section>
@@ -192,18 +196,18 @@
             <!-- Publications -->
             <section class="resume-section" id="publications">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Publications</h2>
+                    <h2 class="mb-5" data-i18n="publications.title">Publications</h2>
                     <div class="publication-list">
 
                         <!-- 論文エントリー -->
                         <div class="publication-item mb-4">
-                            <h3 class="publication-title">Bluetooth Low Energy, Blockchainを用いた勤怠管理システムの提案</h3>
-                            <p class="publication-authors">福富 哲平，宮前 圭吾, 大塚主浩, 吉野 満理絵, 松崎 和賢</p>
-                            <p class="publication-journal"><em>情報処理学会 第85回全国大会講演論文集</em>, 巻 2023, 号 1, p. 657-658, 発行日 2023-02-16</p>
-                            <p class="publication-abstract">近年の労働現場での勤怠を正確に把握するシステムの需要に対して、プライベートブロックチェーン技術とBluetooth Low Energyを利用したシステムを提案する。本研究では、従業員の出退勤を自動的に記録し、改ざん防止のためにブロックチェーン技術を活用します。</p>
+                            <h3 class="publication-title" data-i18n="publications.paper1.title">Bluetooth Low Energy, Blockchainを用いた勤怠管理システムの提案</h3>
+                            <p class="publication-authors" data-i18n="publications.paper1.authors">福富 哲平，宮前 圭吾, 大塚主浩, 吉野 満理絵, 松崎 和賢</p>
+                            <p class="publication-journal"><em data-i18n="publications.paper1.journal">情報処理学会 第85回全国大会講演論文集, 巻 2023, 号 1, p. 657-658, 発行日 2023-02-16</em></p>
+                            <p class="publication-abstract" data-i18n="publications.paper1.abstract">近年の労働現場での勤怠を正確に把握するシステムの需要に対して、プライベートブロックチェーン技術とBluetooth Low Energyを利用したシステムを提案する。本研究では、従業員の出退勤を自動的に記録し、改ざん防止のためにブロックチェーン技術を活用します。</p>
                             <div class="publication-links">
-                                <a href="https://ipsj.ixsq.nii.ac.jp/records/230864" class="btn btn-sm btn-outline-primary me-2" target="_blank" rel="noopener noreferrer">論文ページ</a>
-                                <a href="https://www.ipsj.or.jp/" class="btn btn-sm btn-outline-secondary me-2" target="_blank" rel="noopener noreferrer">情報処理学会</a>
+                                <a href="https://ipsj.ixsq.nii.ac.jp/records/230864" class="btn btn-sm btn-outline-primary me-2" target="_blank" rel="noopener noreferrer" data-i18n="publications.paper1.linkPaper">論文ページ</a>
+                                <a href="https://www.ipsj.or.jp/" class="btn btn-sm btn-outline-secondary me-2" target="_blank" rel="noopener noreferrer" data-i18n="publications.paper1.linkOrg">情報処理学会</a>
                             </div>
                         </div>
                     </div>
@@ -213,93 +217,93 @@
             <!-- Awards-->
             <section class="resume-section" id="awards">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Awards & Certifications</h2>
+                    <h2 class="mb-5" data-i18n="awards.title">Awards & Certifications</h2>
                     <ul class="fa-ul mb-0 awards-list">
                         <li class="award-card">
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            データ分析フェスティバル（主催：中央大学理工学部データサイエンス・AIクラスター）において，奨励賞受賞
+                            <span data-i18n="awards.item1">データ分析フェスティバル（主催：中央大学理工学部データサイエンス・AIクラスター）において，奨励賞受賞</span>
                         </li>
                         <li class="award-card">
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            TOEIC 735 2021年11月
+                            <span data-i18n="awards.item2">TOEIC 735 2021年11月</span>
                         </li>
                         <li class="award-card">
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            ITパスポート
+                            <span data-i18n="awards.item3">ITパスポート</span>
                         </li>
                         <li class="award-card">
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            基本情報技術者 2021年3月
+                            <span data-i18n="awards.item4">基本情報技術者 2021年3月</span>
                         </li>
                         <li class="award-card">
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            応用情報技術者 2024年4月
+                            <span data-i18n="awards.item5">応用情報技術者 2024年4月</span>
                         </li>
                         <li class="award-card">
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            情報処理安全確保支援士試験合格 2025年10月
+                            <span data-i18n="awards.item6">情報処理安全確保支援士試験合格 2025年10月</span>
                         </li>
                         <li class="award-card">
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            AWS Certified Cloud Practitioner - 2023/07/20
+                            <span data-i18n="awards.item7">AWS Certified Cloud Practitioner - 2023/07/20</span>
                         </li>
                         <li class="award-card">
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            AWS Certified Solutions Architect - Associate 2025/05/26
+                            <span data-i18n="awards.item8">AWS Certified Solutions Architect - Associate 2025/05/26</span>
                         </li>
                         <li class="award-card">
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            AWS Certified Solutions Architect - Professional 2025/11/21
+                            <span data-i18n="awards.item9">AWS Certified Solutions Architect - Professional 2025/11/21</span>
                         </li>
                         <li class="award-card">
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            技術局長努力賞，スポーツ系システム 2024年4月
+                            <span data-i18n="awards.item10">技術局長努力賞，スポーツ系システム 2024年4月</span>
                         </li>
                         <li class="award-card">
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            事業局長努力賞，放送局向けシステム開発 2025年4月
+                            <span data-i18n="awards.item11">事業局長努力賞，放送局向けシステム開発 2025年4月</span>
                         </li>
                         <li class="award-card">
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Kaggle,Yale/UNC-CH - Geophysical Waveform Inversion 38th/1365 銀メダル 2025年7月
+                            <span data-i18n="awards.item12">Kaggle,Yale/UNC-CH - Geophysical Waveform Inversion 38th/1365 銀メダル 2025年7月</span>
                         </li>
                         <li class="award-card">
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Kaggle,CMI - Detect Behavior with Sensor Data 92th/2657 銀メダル 2025年9月
+                            <span data-i18n="awards.item13">Kaggle,CMI - Detect Behavior with Sensor Data 92th/2657 銀メダル 2025年9月</span>
                         </li>
                         <li class="award-card">
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Kaggle,NeurIPS - Open Polymer Prediction 2025 120th/2240 銅メダル 2025年9月
+                            <span data-i18n="awards.item14">Kaggle,NeurIPS - Open Polymer Prediction 2025 120th/2240 銅メダル 2025年9月</span>
                         </li>
                         <li class="award-card">
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Kaggle,Stanford RNA 3D Folding Part 2 33th/1867 銀メダル 2025年9月
+                            <span data-i18n="awards.item15">Kaggle,Stanford RNA 3D Folding Part 2 33th/1867 銀メダル 2025年9月</span>
                         </li>
                         <li class="award-card">
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Kaggle,Jigsaw - Agile Community Rules Classification 28th/2445 銀メダル 2025年10月
+                            <span data-i18n="awards.item16">Kaggle,Jigsaw - Agile Community Rules Classification 28th/2445 銀メダル 2025年10月</span>
                         </li>
                         <li class="award-card">
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Kaggle,MAP - Charting Student Math Misunderstandings 15th/1857 銀メダル 2025年10月
+                            <span data-i18n="awards.item17">Kaggle,MAP - Charting Student Math Misunderstandings 15th/1857 銀メダル 2025年10月</span>
                         </li>
                         <li class="award-card">
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Kaggle,CAFA 6 Protein Function Prediction 36th/2259 銀メダル 2026年5月
+                            <span data-i18n="awards.item18">Kaggle,CAFA 6 Protein Function Prediction 36th/2259 銀メダル 2026年5月</span>
                         </li>
                         <li class="award-card">
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Kaggle,NVIDIA Nemotron Model Reasoning Challenge 90th/4182 銀メダル 2026年6月
+                            <span data-i18n="awards.item19">Kaggle,NVIDIA Nemotron Model Reasoning Challenge 90th/4182 銀メダル 2026年6月</span>
                         </li>
                         <li class="award-card">
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Kaggle,The 2026 NeuroGolf Championship 50th/2963 銀メダル 2026年7月
+                            <span data-i18n="awards.item20">Kaggle,The 2026 NeuroGolf Championship 50th/2963 銀メダル 2026年7月</span>
                         </li>
                         <li class="award-card">
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            防衛省サイバーセキュリティコンテスト 10位 588 Team_Ichigaya
+                            <span data-i18n="awards.item21">防衛省サイバーセキュリティコンテスト 10位 588 Team_Ichigaya</span>
                             <br />
-                            <img src="assets/img/image.png" alt="防衛省サイバーセキュリティコンテスト" style="max-width:100%; margin-top:10px; border-radius:8px;" />
+                            <img src="assets/img/image.png" data-i18n-alt="awards.item21.alt" alt="防衛省サイバーセキュリティコンテスト" style="max-width:100%; margin-top:10px; border-radius:8px;" />
                         </li>
                     </ul>
                 </div>
@@ -307,6 +311,8 @@
         </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- i18n -->
+        <script src="js/i18n.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>

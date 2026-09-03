@@ -4,6 +4,12 @@
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
 */
 
+function localizedText(value, lang) {
+    if (value == null) return '';
+    if (typeof value === 'string') return value;
+    return value[lang] || value.ja || value.en || '';
+}
+
 async function loadProjects() {
     const list = document.getElementById('projects-list');
     if (!list) return;
@@ -12,6 +18,7 @@ async function loadProjects() {
         const response = await fetch('data/projects.json');
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         const projects = await response.json();
+        const lang = window.PortfolioI18n ? window.PortfolioI18n.getLang() : 'ja';
 
         list.replaceChildren(...projects.map(project => {
             const item = document.createElement('li');
@@ -27,14 +34,18 @@ async function loadProjects() {
             link.rel = 'noopener noreferrer';
             link.textContent = project.name;
 
-            item.append(icon, link, document.createTextNode(` — ${project.description}`));
+            const description = localizedText(project.description, lang);
+            item.append(icon, link, document.createTextNode(` — ${description}`));
             return item;
         }));
     } catch (error) {
         console.error('Failed to load projects:', error);
         const item = document.createElement('li');
         item.className = 'mb-2';
-        item.textContent = 'プロジェクト一覧の読み込みに失敗しました。';
+        const lang = window.PortfolioI18n ? window.PortfolioI18n.getLang() : 'ja';
+        item.textContent = window.PortfolioI18n
+            ? window.PortfolioI18n.t('projects.loadError', lang)
+            : 'プロジェクト一覧の読み込みに失敗しました。';
         list.replaceChildren(item);
     }
 }
@@ -47,6 +58,7 @@ async function loadCves() {
         const response = await fetch('data/cves.json');
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         const cves = await response.json();
+        const lang = window.PortfolioI18n ? window.PortfolioI18n.getLang() : 'ja';
 
         list.replaceChildren(...cves.map(cve => {
             const article = document.createElement('article');
@@ -75,15 +87,15 @@ async function loadCves() {
 
             const title = document.createElement('p');
             title.className = 'cve-title';
-            title.textContent = cve.title;
+            title.textContent = localizedText(cve.title, lang);
 
             const product = document.createElement('p');
             product.className = 'cve-product';
-            product.textContent = `${cve.product} · ${cve.role}`;
+            product.textContent = `${cve.product} · ${localizedText(cve.role, lang)}`;
 
             const description = document.createElement('p');
             description.className = 'cve-description';
-            description.textContent = cve.description;
+            description.textContent = localizedText(cve.description, lang);
 
             const links = document.createElement('div');
             links.className = 'cve-links';
@@ -103,7 +115,10 @@ async function loadCves() {
     } catch (error) {
         console.error('Failed to load CVEs:', error);
         const item = document.createElement('p');
-        item.textContent = 'CVE 一覧の読み込みに失敗しました。';
+        const lang = window.PortfolioI18n ? window.PortfolioI18n.getLang() : 'ja';
+        item.textContent = window.PortfolioI18n
+            ? window.PortfolioI18n.t('security.loadError', lang)
+            : 'CVE 一覧の読み込みに失敗しました。';
         list.replaceChildren(item);
     }
 }
@@ -160,5 +175,10 @@ window.addEventListener('DOMContentLoaded', event => {
 
     loadProjects();
     loadCves();
+
+    window.addEventListener('langchange', () => {
+        loadProjects();
+        loadCves();
+    });
 
 });

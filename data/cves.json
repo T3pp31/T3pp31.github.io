@@ -1,13 +1,22 @@
 [
   {
     "id": "CVE-2026-75601",
-    "title": "Authentication bypass on /metrics endpoint when --basic-auth is enabled",
+    "title": {
+      "ja": "Authentication bypass on /metrics endpoint when --basic-auth is enabled",
+      "en": "Authentication bypass on /metrics endpoint when --basic-auth is enabled"
+    },
     "product": "static-web-server",
     "severity": "Medium",
     "cvss": "4.3",
-    "role": "Reporter / Fix author",
+    "role": {
+      "ja": "Reporter / Fix author",
+      "en": "Reporter / Fix author"
+    },
     "year": "2026",
-    "description": "Static Web Server において、--basic-auth と --metrics が同時に有効な場合、/metrics エンドポイントが認証チェックより先に処理され、未認証で Prometheus メトリクスを取得できる問題を報告し、修正 PR を作成しました。",
+    "description": {
+      "ja": "Static Web Server において、--basic-auth と --metrics が同時に有効な場合、/metrics エンドポイントが認証チェックより先に処理され、未認証で Prometheus メトリクスを取得できる問題を報告し、修正 PR を作成しました。",
+      "en": "Reported and authored a fix for Static Web Server: when --basic-auth and --metrics were both enabled, /metrics was handled before auth checks, allowing unauthenticated access to Prometheus metrics."
+    },
     "links": [
       {
         "label": "CVE Record",

@@ -2,46 +2,73 @@
   {
     "name": "search_devices",
     "url": "https://github.com/T3pp31/search_devices",
-    "description": "デバイス検索ツール デスクトップアプリです."
+    "description": {
+      "ja": "デバイス検索ツール デスクトップアプリです.",
+      "en": "A desktop app for searching devices."
+    }
   },
   {
     "name": "crypto-visualizer",
     "url": "https://t3pp31.github.io/crypto-visualizer/",
-    "description": "暗号アルゴリズムの可視化Webアプリです."
+    "description": {
+      "ja": "暗号アルゴリズムの可視化Webアプリです.",
+      "en": "A web app that visualizes cryptographic algorithms."
+    }
   },
   {
     "name": "pdf_merge_app",
     "url": "https://t3pp31.github.io/pdf_merge_app/",
-    "description": "PDF結合Webアプリです."
+    "description": {
+      "ja": "PDF結合Webアプリです.",
+      "en": "A web app for merging PDF files."
+    }
   },
   {
     "name": "QR_generator",
     "url": "https://t3pp31.github.io/QR_generator/",
-    "description": "QRコード生成Webアプリです."
+    "description": {
+      "ja": "QRコード生成Webアプリです.",
+      "en": "A web app for generating QR codes."
+    }
   },
   {
     "name": "Shogi",
     "url": "https://t3pp31.github.io/Shogi/",
-    "description": "将棋Webアプリです."
+    "description": {
+      "ja": "将棋Webアプリです.",
+      "en": "A Shogi (Japanese chess) web app."
+    }
   },
   {
     "name": "Othello",
     "url": "https://t3pp31.github.io/Othello/",
-    "description": "オセロWebアプリです."
+    "description": {
+      "ja": "オセロWebアプリです.",
+      "en": "An Othello web app."
+    }
   },
   {
     "name": "face-mosaic-app",
     "url": "https://t3pp31.github.io/face-mosaic-app/",
-    "description": "ブラウザ内で顔検出しモザイクをかけるWebアプリです."
+    "description": {
+      "ja": "ブラウザ内で顔検出しモザイクをかけるWebアプリです.",
+      "en": "A web app that detects faces in the browser and applies a mosaic."
+    }
   },
   {
     "name": "Transnote",
     "url": "https://t3pp31.github.io/Transnote/",
-    "description": "macOS向けオンデバイス文字起こしアプリの配布ページです."
+    "description": {
+      "ja": "macOS向けオンデバイス文字起こしアプリの配布ページです.",
+      "en": "Distribution page for an on-device transcription app for macOS."
+    }
   },
   {
     "name": "DockBridge",
     "url": "https://t3pp31.github.io/DockBridge/",
-    "description": "macOS向けSFTPクライアントの配布ページです."
+    "description": {
+      "ja": "macOS向けSFTPクライアントの配布ページです.",
+      "en": "Distribution page for an SFTP client for macOS."
+    }
   }
 ]
