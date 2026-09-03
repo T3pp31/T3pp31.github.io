@@ -422,6 +422,133 @@ section.resume-section {
   color: var(--text-muted);
 }
 
+/* --- Security / CVE Section --- */
+.cve-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 720px;
+}
+
+.cve-card {
+  background: var(--surface-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem 1.75rem;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.cve-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--gradient);
+  opacity: 0.85;
+}
+
+.cve-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-3px);
+  border-color: rgba(99, 102, 241, 0.2);
+}
+
+.cve-card-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.cve-id {
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 1.15rem !important;
+  font-weight: 600 !important;
+  color: var(--primary) !important;
+  margin: 0 !important;
+  letter-spacing: -0.01em;
+}
+
+.cve-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cve-severity {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.2rem 0.65rem;
+  border-radius: var(--radius-sm);
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--primary);
+}
+
+.cve-severity-medium {
+  background: rgba(245, 158, 11, 0.12);
+  color: #b45309;
+}
+
+.cve-severity-high,
+.cve-severity-critical {
+  background: rgba(239, 68, 68, 0.12);
+  color: #b91c1c;
+}
+
+.cve-severity-low {
+  background: rgba(34, 197, 94, 0.12);
+  color: #15803d;
+}
+
+.cve-year {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.cve-title {
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.35rem;
+  line-height: 1.5;
+}
+
+.cve-product {
+  font-size: 0.9rem;
+  color: var(--primary);
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.cve-description {
+  color: var(--text-muted);
+  line-height: 1.75;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.cve-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.resume-section.reveal .cve-card {
+  animation: fadeInUp 0.5s ease both;
+}
+
+.resume-section.reveal .cve-card:nth-child(1) { animation-delay: 0s; }
+.resume-section.reveal .cve-card:nth-child(2) { animation-delay: 0.1s; }
+.resume-section.reveal .cve-card:nth-child(3) { animation-delay: 0.2s; }
+.resume-section.reveal .cve-card:nth-child(4) { animation-delay: 0.3s; }
+
 /* --- Scroll Reveal Animation --- */
 .hidden-section {
   opacity: 0;
