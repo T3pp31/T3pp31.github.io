@@ -39,6 +39,75 @@ async function loadProjects() {
     }
 }
 
+async function loadCves() {
+    const list = document.getElementById('cve-list');
+    if (!list) return;
+
+    try {
+        const response = await fetch('data/cves.json');
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const cves = await response.json();
+
+        list.replaceChildren(...cves.map(cve => {
+            const article = document.createElement('article');
+            article.className = 'cve-card mb-4';
+
+            const header = document.createElement('div');
+            header.className = 'cve-card-header';
+
+            const id = document.createElement('h3');
+            id.className = 'cve-id';
+            id.textContent = cve.id;
+
+            const meta = document.createElement('div');
+            meta.className = 'cve-meta';
+
+            const severity = document.createElement('span');
+            severity.className = `cve-severity cve-severity-${(cve.severity || '').toLowerCase()}`;
+            severity.textContent = `${cve.severity} ${cve.cvss}`;
+
+            const year = document.createElement('span');
+            year.className = 'cve-year';
+            year.textContent = cve.year;
+
+            meta.append(severity, year);
+            header.append(id, meta);
+
+            const title = document.createElement('p');
+            title.className = 'cve-title';
+            title.textContent = cve.title;
+
+            const product = document.createElement('p');
+            product.className = 'cve-product';
+            product.textContent = `${cve.product} · ${cve.role}`;
+
+            const description = document.createElement('p');
+            description.className = 'cve-description';
+            description.textContent = cve.description;
+
+            const links = document.createElement('div');
+            links.className = 'cve-links';
+            for (const item of cve.links || []) {
+                const link = document.createElement('a');
+                link.href = item.url;
+                link.className = 'btn btn-sm btn-outline-primary me-2';
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer';
+                link.textContent = item.label;
+                links.append(link);
+            }
+
+            article.append(header, title, product, description, links);
+            return article;
+        }));
+    } catch (error) {
+        console.error('Failed to load CVEs:', error);
+        const item = document.createElement('p');
+        item.textContent = 'CVE 一覧の読み込みに失敗しました。';
+        list.replaceChildren(item);
+    }
+}
+
 window.addEventListener('DOMContentLoaded', event => {
 
     // Activate Bootstrap scrollspy on the main nav element
@@ -90,5 +159,6 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
     loadProjects();
+    loadCves();
 
 });
