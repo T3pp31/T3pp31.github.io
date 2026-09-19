@@ -32,7 +32,6 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience" data-i18n="nav.experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education" data-i18n="nav.education">Education</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills" data-i18n="nav.skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests" data-i18n="nav.interests">Interests</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#libraries" data-i18n="nav.libraries">Libraries</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#security" data-i18n="nav.security">Security</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects" data-i18n="nav.projects">Projects</a></li>
@@ -57,7 +56,7 @@
                     <div class="subheading mb-4">
                         Tokyo, Japan · <a href="mailto:name@email.com" data-i18n="about.role">Full-Stack Engineer</a>
                     </div>
-                    <p class="lead mb-4" data-i18n="about.lead">メーカーでソフトウェアエンジニアをしています．現在はネットワークスペシャリスト取得に向けて取り組んでいます．</p>
+                    <p class="lead mb-4" data-i18n="about.lead">(株)本田技術研究所でソフトウェアエンジニアをしています．現在はネットワークスペシャリスト取得に向けて取り組んでいます．</p>
                     <p class="lead mb-5" style="display:inline-flex;align-items:center;gap:0.5rem;background:rgba(99,102,241,0.08);padding:0.4rem 1rem;border-radius:2rem;font-size:0.95rem;font-weight:500;color:#6366f1;">
                         <i class="fab fa-kaggle"></i> <span data-i18n="about.kaggle">Kaggle Competition Expert</span>
                     </p>
@@ -77,16 +76,23 @@
                     <h2 class="mb-5" data-i18n="experience.title">Experience</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0" data-i18n="experience.company1.name">メーカー</h3>
-                            <div class="subheading mb-3"></div>
+                            <h3 class="mb-0" data-i18n="experience.company1.name">(株)本田技術研究所</h3>
+                            <div class="subheading mb-3" data-i18n="experience.company1.department">SDV研究開発センター</div>
                             <p data-i18n="experience.company1.desc">ソフトウェアエンジニア，データ解析，予測などの開発を行っています．</p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary" data-i18n="experience.company1.date">2026.2 - 現在</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary" data-i18n="experience.company1.date">2026.4 - 現在</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0" data-i18n="experience.company1Previous.name">本田技研工業(株)</h3>
+                            <div class="subheading mb-3" data-i18n="experience.company1Previous.department">四輪開発本部　PU・エネルギーシステム開発統括部</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary" data-i18n="experience.company1Previous.date">2026.2 - 2026.3</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0" data-i18n="experience.company2.name">一般社団法人共同通信社</h3>
-                            <div class="subheading mb-3"></div>
+                            <div class="subheading mb-3" data-i18n="experience.company2.department">情報技術局</div>
                             <p data-i18n="experience.company2.desc">内製開発，AWSを活用した開発，保守運用，外部ベンダとの開発を行ってきました．</p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary" data-i18n="experience.company2.date">2023.4 - 2026.1</span></div>
@@ -143,32 +149,19 @@
                 </div>
             </section>
             <hr class="m-0" />
-            <!-- Interests-->
-            <section class="resume-section" id="interests">
-                <div class="resume-section-content">
-                    <h2 class="mb-5" data-i18n="interests.title">Interests</h2>
-                    <p data-i18n="interests.p1">技術全般に興味があります．特にセキュリティには面白さを感じ，独学を行っています．また，Kaggleコンペティションに意欲的に参加し，データ分析の知見を深めているところです．．</p>
-                    <p class="mb-0" data-i18n="interests.p2">セキュリティを理解するために，技術の特性について，深く学んでいく必要があると考えています．</p>
-                </div>
-            </section>
-            <hr class="m-0" />
             <!-- Libraries-->
             <section class="resume-section" id="libraries">
                 <div class="resume-section-content">
                     <h2 class="mb-5" data-i18n="libraries.title">Libraries</h2>
-                    <p class="mb-3" data-i18n="libraries.intro">コントリビュートしているライブラリ一覧です。（名称とURL、任意で簡単な説明）</p>
+                    <p class="mb-3" data-i18n="libraries.intro">コントリビュートしているライブラリ一覧です。</p>
                     <ul class="fa-ul mb-0">
                         <li class="mb-2">
                             <span class="fa-li"><i class="fas fa-code-branch"></i></span>
-                            <a href="https://crates.io/crates/caesar_cipher_enc_dec" target="_blank" rel="noopener noreferrer">caesar_cipher_enc_dec</a><span data-i18n="libraries.caesar"> — シーザー暗号を簡単に使うためのライブラリ in Rust.</span>
+                            <a href="https://github.com/static-web-server/static-web-server" target="_blank" rel="noopener noreferrer">static-web-server</a><span data-i18n="libraries.staticWebServer"> — Rust製の高速な静的Webサーバーです。</span>
                         </li>
                         <li class="mb-2">
                             <span class="fa-li"><i class="fas fa-code-branch"></i></span>
-                            <a href="https://crates.io/crates/input_py" target="_blank" rel="noopener noreferrer">input_py</a><span data-i18n="libraries.input_py"> — Python用の入力補助ライブラリ in Rust.</span>
-                        </li>
-                        <li class="mb-2">
-                            <span class="fa-li"><i class="fas fa-code-branch"></i></span>
-                            <a href="https://github.com/secdev/scapy" target="_blank" rel="noopener noreferrer">scapy</a><span data-i18n="libraries.scapy"> — Python用のパケット操作ライブラリ.気が向いたときにコントリビュートしています．大学時代お世話になりました．</span>
+                            <a href="https://github.com/secdev/scapy" target="_blank" rel="noopener noreferrer">scapy</a><span data-i18n="libraries.scapy"> — Python製のパケット操作・解析ライブラリです。</span>
                         </li>
 
                     </ul>
@@ -304,6 +297,10 @@
                             <span data-i18n="awards.item21">防衛省サイバーセキュリティコンテスト 10位 588 Team_Ichigaya</span>
                             <br />
                             <img src="assets/img/image.png" data-i18n-alt="awards.item21.alt" alt="防衛省サイバーセキュリティコンテスト" style="max-width:100%; margin-top:10px; border-radius:8px;" />
+                        </li>
+                        <li class="award-card">
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            <span data-i18n="awards.item22">Kaggle,The Pokémon Company - PTCG AI Battle Challenge Simulation 41st/6807 銀メダル 2026年9月</span>
                         </li>
                     </ul>
                 </div>

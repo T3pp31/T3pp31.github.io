@@ -475,13 +475,6 @@ section.resume-section {
   box-shadow: var(--shadow-md);
 }
 
-/* --- Interests Section --- */
-#interests p {
-  max-width: 640px;
-  line-height: 1.9;
-  color: var(--text-muted);
-}
-
 /* --- Security / CVE Section --- */
 .cve-list {
   display: flex;
