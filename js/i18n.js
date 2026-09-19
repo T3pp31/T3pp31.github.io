@@ -88,7 +88,6 @@
       'awards.item19': 'Kaggle,NVIDIA Nemotron Model Reasoning Challenge 90th/4182 銀メダル 2026年6月',
       'awards.item20': 'Kaggle,The 2026 NeuroGolf Championship 50th/2963 銀メダル 2026年7月',
       'awards.item21': '防衛省サイバーセキュリティコンテスト 10位 588 Team_Ichigaya',
-      'awards.item21.alt': '防衛省サイバーセキュリティコンテスト',
       'awards.item22': 'Kaggle,The Pokémon Company - PTCG AI Battle Challenge Simulation 41st/6807 銀メダル 2026年9月',
 
       'certifications.title': 'Certifications',
@@ -183,7 +182,6 @@
       'awards.item19': 'Kaggle, NVIDIA Nemotron Model Reasoning Challenge 90th/4182 Silver — June 2026',
       'awards.item20': 'Kaggle, The 2026 NeuroGolf Championship 50th/2963 Silver — July 2026',
       'awards.item21': 'MOD Cybersecurity Contest 10th place — 588 Team_Ichigaya',
-      'awards.item21.alt': 'MOD Cybersecurity Contest',
       'awards.item22': 'Kaggle, The Pokémon Company – PTCG AI Battle Challenge Simulation 41st/6807 Silver — September 2026',
 
       'certifications.title': 'Certifications',

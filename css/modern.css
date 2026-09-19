@@ -415,64 +415,21 @@ section.resume-section {
   color: var(--primary-dark) !important;
 }
 
-/* --- Awards Section --- */
-.awards-list {
-  display: grid !important;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 1rem;
-  align-items: start;
-  list-style: none !important;
-  padding: 0 !important;
-  margin: 0 !important;
+/* --- Awards / Certifications --- */
+.achievement-list {
+  list-style-type: square;
+  padding-left: 1.5rem;
+  max-width: 960px;
 }
 
-.award-card {
-  background: var(--surface-card) !important;
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg) !important;
-  padding: 1.5rem !important;
-  padding-left: 1.5rem !important;
-  box-shadow: var(--shadow-sm);
-  transition: var(--transition);
-  font-size: 0.95rem;
-  line-height: 1.6;
-  position: relative;
-  overflow: hidden;
+.achievement-list li {
+  margin-bottom: 0.85rem;
+  padding-left: 0.25rem;
+  line-height: 1.7;
 }
 
-.award-card .fa-li {
-  position: static !important;
-  display: inline-block;
-  margin-right: 0.5rem;
-  left: auto !important;
-}
-
-.award-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: var(--gradient);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.award-card:hover {
-  box-shadow: var(--shadow-lg);
-  transform: translateY(-3px);
-  border-color: rgba(99, 102, 241, 0.2);
-}
-
-.award-card:hover::before {
-  opacity: 1;
-}
-
-.award-card img {
-  border-radius: var(--radius-md) !important;
-  margin-top: 1rem !important;
-  box-shadow: var(--shadow-md);
+.achievement-list li::marker {
+  color: var(--text);
 }
 
 /* --- Security / CVE Section --- */
@@ -673,10 +630,6 @@ section.resume-section {
   #sideNav {
     background: var(--sidebar-bg) !important;
   }
-
-  .awards-list {
-    grid-template-columns: 1fr !important;
-  }
 }
 
 @media (max-width: 576px) {
@@ -694,7 +647,6 @@ section.resume-section {
 
 /* --- Staggered card animation --- */
 .resume-section.reveal .d-flex.flex-column.flex-md-row,
-.resume-section.reveal .award-card,
 .resume-section.reveal .fa-ul li,
 .resume-section.reveal .publication-item {
   animation: fadeInUp 0.5s ease both;
@@ -704,23 +656,6 @@ section.resume-section {
 .resume-section.reveal .d-flex:nth-child(3) { animation-delay: 0.1s; }
 .resume-section.reveal .d-flex:nth-child(4) { animation-delay: 0.2s; }
 .resume-section.reveal .d-flex:nth-child(5) { animation-delay: 0.3s; }
-
-.resume-section.reveal .award-card:nth-child(1) { animation-delay: 0s; }
-.resume-section.reveal .award-card:nth-child(2) { animation-delay: 0.05s; }
-.resume-section.reveal .award-card:nth-child(3) { animation-delay: 0.1s; }
-.resume-section.reveal .award-card:nth-child(4) { animation-delay: 0.15s; }
-.resume-section.reveal .award-card:nth-child(5) { animation-delay: 0.2s; }
-.resume-section.reveal .award-card:nth-child(6) { animation-delay: 0.25s; }
-.resume-section.reveal .award-card:nth-child(7) { animation-delay: 0.3s; }
-.resume-section.reveal .award-card:nth-child(8) { animation-delay: 0.35s; }
-.resume-section.reveal .award-card:nth-child(9) { animation-delay: 0.4s; }
-.resume-section.reveal .award-card:nth-child(10) { animation-delay: 0.45s; }
-.resume-section.reveal .award-card:nth-child(11) { animation-delay: 0.5s; }
-.resume-section.reveal .award-card:nth-child(12) { animation-delay: 0.55s; }
-.resume-section.reveal .award-card:nth-child(13) { animation-delay: 0.6s; }
-.resume-section.reveal .award-card:nth-child(14) { animation-delay: 0.65s; }
-.resume-section.reveal .award-card:nth-child(15) { animation-delay: 0.7s; }
-.resume-section.reveal .award-card:nth-child(16) { animation-delay: 0.75s; }
 
 .resume-section.reveal .fa-ul li:nth-child(1) { animation-delay: 0s; }
 .resume-section.reveal .fa-ul li:nth-child(2) { animation-delay: 0.1s; }
