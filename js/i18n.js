@@ -21,7 +21,7 @@
 
       'about.role': 'Full-Stack Engineer',
       'about.lead': '(株)本田技術研究所でソフトウェアエンジニアをしています．現在はネットワークスペシャリスト取得に向けて取り組んでいます．',
-      'about.kaggle': 'Kaggle Competition Expert',
+      'about.kaggle': 'Kaggle Competitions Master',
 
       'experience.title': 'Experience',
       'experience.company1.name': '(株)本田技術研究所',
@@ -89,6 +89,7 @@
       'awards.item20': 'Kaggle,The 2026 NeuroGolf Championship 50th/2963 銀メダル 2026年7月',
       'awards.item21': '防衛省サイバーセキュリティコンテスト 10位 588 Team_Ichigaya',
       'awards.item22': 'Kaggle,The Pokémon Company - PTCG AI Battle Challenge Simulation 41st/6807 銀メダル 2026年9月',
+      'awards.item23': 'Kaggle,Kaggriculture 26th/10148 金メダル 2026年10月',
 
       'certifications.title': 'Certifications',
       'certifications.item1': 'AWS Certified Solutions Architect - Professional 2025/11/21',
@@ -115,7 +116,7 @@
 
       'about.role': 'Full-Stack Engineer',
       'about.lead': 'I work as a software engineer at Honda R&D. I am currently studying for the Network Specialist exam.',
-      'about.kaggle': 'Kaggle Competition Expert',
+      'about.kaggle': 'Kaggle Competitions Master',
 
       'experience.title': 'Experience',
       'experience.company1.name': 'Honda R&D Co., Ltd.',
@@ -183,6 +184,7 @@
       'awards.item20': 'Kaggle, The 2026 NeuroGolf Championship 50th/2963 Silver — July 2026',
       'awards.item21': 'MOD Cybersecurity Contest 10th place — 588 Team_Ichigaya',
       'awards.item22': 'Kaggle, The Pokémon Company – PTCG AI Battle Challenge Simulation 41st/6807 Silver — September 2026',
+      'awards.item23': 'Kaggle, Kaggriculture 26th/10148 Gold — October 2026',
 
       'certifications.title': 'Certifications',
       'certifications.item1': 'AWS Certified Solutions Architect – Professional — 2025/11/21',
